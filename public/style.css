@@ -1,0 +1,81 @@
+.content {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+#info {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.players .element-players {
+  margin: 10px;
+}
+
+.board {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.square {
+  width: calc(100% / 3 - 4px);
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borders {
+  border: 2px solid #000;
+}
+
+.border-top-bottom {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.border-left-right {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.ex {
+  font-family: sans-serif;
+  font-size: 7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lines {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
+.horizontal-line {
+  top: 16%;
+}
+

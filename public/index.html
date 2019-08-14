@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jogo da Velha</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jogo da Velha</h1>
+  <div class="players">
+    <label  class="element-players" for="player">Player</label>
+    <input  class="element-players" type="text" name="player" id="player">
+    <button class="element-players"  type="button" id="btn-start">Começar</button>
+    <p id="symbol"></p>
+  </div>
+  <p id="info"></p>
+  <h1 id="message"></h1>
+  <div class="content">
+    
+  </div>
+
+  <script src="./client.js"></script>
+</body>
+</html>
