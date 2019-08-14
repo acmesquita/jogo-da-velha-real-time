@@ -11,12 +11,8 @@ Iniciando o jogo
 
 Exemplos
 
-![alt text](https://drive.google.com/file/d/1ZkjH_yUN8Yh5JIPuUIrUtbPY0Tv_W81N/view?usp=sharing)
-
-![alt text](https://drive.google.com/file/d/1-NFRLPq0CoVj8Vef8e_5u1mjpOwTWjsb/view?usp=sharing)
-
-![alt text](https://drive.google.com/file/d/1Ub-GucHpswT4czNM6ye3LNcuTN13vES8/view?usp=sharing)
-
-![alt text](https://drive.google.com/file/d/1uEvL6zGsE2vFoZe09h6TioB-SDZkZa85/view?usp=sharing)
-
-![alt text](https://drive.google.com/file/d/1uEvL6zGsE2vFoZe09h6TioB-SDZkZa85/view?usp=sharing)
+![screenshort-01](screenshort/1.png?raw=true "Início da Aplicação")
+![screenshort-02](screenshort/2.png?raw=true "Com um jogador")
+![screenshort-03](screenshort/3.png?raw=true "Início do Jogo")
+![screenshort-04](screenshort/4.png?raw=true "Vitória")
+![screenshort-05](screenshort/5.png?raw=true "Deu Velha")
