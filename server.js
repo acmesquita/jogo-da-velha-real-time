@@ -16,7 +16,16 @@ app.use('/', (req, res) => {
 
 let players = []
 let board = new Array(8)
-const possibilities = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6] ]
+const possibilities_with_line = [ 
+  {value: [0,1,2], line: "h1"},
+  {value: [3,4,5], line: "h2"}, 
+  {value: [6,7,8], line: "h3"}, 
+  {value: [0,3,6], line: "v1"}, 
+  {value: [1,4,7], line: "v2"}, 
+  {value: [2,5,8], line: "v3"}, 
+  {value: [0,4,8], line: "d1"}, 
+  {value: [2,4,6], line: "d2"}
+ ]
 let current_player;
 
 io.on('connection', socket => {
@@ -68,12 +77,12 @@ io.on('connection', socket => {
       }
     }).filter(p=> p != undefined ).sort()
     
-    if(combination.length === 3){
-      
-      let aux = possibilities.filter(p => { return arraysEqual(p, combination) })
+    if(combination.length >= 3){
+            
+      let aux = possibilities_with_line.filter(p => {return arrayIncludes(p.value, combination) })
       
       if(!!aux.length){
-        emit('gameOver', { message: `${current_player.name} Venceu!`, combination})
+        emit('gameOver', { message: `${current_player.name} Venceu!`, result: aux[0]})
         players = new Array()
         board = new Array(8)
         return
@@ -90,6 +99,16 @@ io.on('connection', socket => {
     
   })
 });
+
+function arrayIncludes(base, compere){
+  let result = 0
+  compere.forEach( v => {
+    if(base.includes(v)){
+      result++
+    }
+  })
+  return result === 3;
+}
 
 function arraysEqual(a1,a2) {
   return JSON.stringify(a1)==JSON.stringify(a2);

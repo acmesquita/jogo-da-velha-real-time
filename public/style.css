@@ -68,7 +68,14 @@ h1 {
   text-transform: uppercase;
 }
 
-.lines {
+.hide {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+/* .lines {
   position: absolute;
   height: 3px;
   width: 100%;
@@ -98,4 +105,4 @@ h1 {
   top: 195px;
   width: 398px;
   left: 462px;
-}
+} */

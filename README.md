@@ -26,7 +26,7 @@ Jogo da Velha em real time com Socket.io, Node e HTML
 
 #### Vitória
 
-![screenshort-04](https://github.com/acmesquita/jogo-da-velha-real-time/blob/master/screenshot/4.png?raw=true"Vitória")
+![screenshort-06](https://github.com/acmesquita/jogo-da-velha-real-time/blob/master/screenshot/4.png?raw=true"Vitória")
 
 #### Deu Velha
 

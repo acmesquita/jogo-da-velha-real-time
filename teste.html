@@ -1,0 +1,52 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jogo da Velha</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+
+  <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+  <h1>Jogo da Velha</h1>
+  <div class="players">
+    <label class="element-players" for="player">Player</label>
+    <input class="element-players" type="text" name="player" id="player" disabled="">
+    
+    <p id="symbol">O</p>
+  </div>
+  <p id="info">Catharina VS Lucas </p>
+  <h1 id="message">Catharina Venceu!</h1>
+  <div class="content">
+    <div class="board">
+      <div id="0" name="0" onclick="play(this);" class="square"><p class="ex">X</p></div>
+      <div id="1" name="1" onclick="play(this);" class="square border-left-right"><p class="ex">X</p></div>
+      <div id="2" name="2" onclick="play(this);" class="square"><p class="ex">X</p></div>
+      <div id="3" name="3" onclick="play(this);" class="square border-top-bottom"><p class="ex"></p></div>
+      <div id="4" name="4" onclick="play(this);" class="square borders"><p class="ex">O</p></div>
+      <div id="5" name="5" onclick="play(this);" class="square border-top-bottom"><p class="ex">O</p></div>
+      <div id="6" name="6" onclick="play(this);" class="square"><p class="ex"></p></div>
+      <div id="7" name="7" onclick="play(this);" class="square border-left-right"><p class="ex"></p></div>
+      <div id="8" name="8" onclick="play(this);" class="square"><p class="ex"></p></div>
+      <!-- Lines -->
+      <!-- <div class="lines horizontal-line"></div> -->
+      <svg height="100%" width="100%" style="position: absolute;">
+        <line class="show" id="h1" x1="20" y1="62" x2="760" y2="62" style="stroke:rgb(0,0,0);stroke-width:2"/>
+        <line class="hide" id="h2" x1="20" y1="196" x2="760" y2="196" style="stroke:rgb(0,0,0);stroke-width:2"/>
+        <line class="hide" id="h3" x1="20" y1="330" x2="760" y2="330" style="stroke:rgb(0,0,0);stroke-width:2"/>
+    
+        <line class="hide" id="v1" x1="132" y1="20" x2="132" y2="380" style="stroke:rgb(0,0,0);stroke-width:2"/>
+        <line class="hide" id="v2" x1="397" y1="20" x2="397" y2="380" style="stroke:rgb(0,0,0);stroke-width:2"/>
+        <line class="hide" id="v3" x1="662" y1="20" x2="662" y2="380" style="stroke:rgb(0,0,0);stroke-width:2"/>
+            
+        <line class="hide" id="d1" x1="750" y1="366" x2="20" y2="20" style="stroke:rgb(0,0,0);stroke-width:2"/> -->
+        <line class="hide" id="d2" x1="0" y1="388" x2="800" y2="0" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+      </svg>
+    </div>
+  </div>
+
+  <!-- <script src="./client.js"></script> -->
+
+</body></html>
