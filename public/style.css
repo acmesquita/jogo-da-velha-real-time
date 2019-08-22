@@ -75,7 +75,27 @@ h1 {
   background-color: #000;
 }
 
-.horizontal-line {
+.horizontal-line-1 {
   top: 16%;
 }
 
+.vestical-line-1 {
+  transform: rotate(90deg);
+  top: 195px;
+  width: 398px;
+  left: -67px;
+}
+
+.vestical-line-2 {
+  transform: rotate(90deg);
+  top: 195px;
+  width: 398px;
+  left: 197px;
+}
+
+.vestical-line-3 {
+  transform: rotate(90deg);
+  top: 195px;
+  width: 398px;
+  left: 462px;
+}
